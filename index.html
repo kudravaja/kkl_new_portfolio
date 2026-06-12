@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ККЛ</title>
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Что за школа?</button>
+      <div class="text-container"></div>
+      <div class="text-wrapper">
+        <div class="text-loading">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+        </div>
+        <div class="text-loading">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+        </div>
+        <div class="text-loading">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+        </div>
+        <div class="text-loading">
+          <img class="img" src="images/24.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+        </div>
+        <div class="text-loading">
+          <img class="img" src="images/10.jpg">
+          <img class="img" src="images/11.jpg">
+          <img class="img" src="images/12.jpg">
+          <img class="img" src="images/13.jpg">
+          <img class="img" src="images/14.jpg">
+          <img class="img" src="images/15.jpg">
+          <img class="img" src="images/16.jpg">
+          <img class="img" src="images/17.jpg">
+          <img class="img" src="images/18.jpg">
+          <img class="img" src="images/19.jpg">
+          <img class="img" src="images/20.jpg">
+          <img class="img" src="images/21.jpg">
+          <img class="img" src="images/22.jpg">
+          <img class="img" src="images/23.jpg">
+          <img class="img" src="images/24.jpg">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn");
+
+      btn.addEventListener("click", function () {
+        gsap.to(".btn", 1, {
+          opacity: 0,
+          y: -40,
+          ease: Expo.easeInOut,
+        });
+
+        gsap.to(".text-wrapper> div", 1, {
+          x: "400",
+          ease: Expo.easeInOut,
+          delay: 0.5,
+          stagger: 0.4,
+          opacity: 1,
+        });
+
+        gsap.to(".text-wrapper", 3, {
+          y: -400,
+          scale: 3.5,
+          rotate: -90,
+          ease: Expo.easeInOut,
+          delay: 1.5,
+        });
+
+        gsap.to(".text", 1, {
+          opacity: 1,
+          ease: Expo.easeInOut,
+          delay: 3.5,
+        });
+
+        gsap.to(".text-wrapper> div", 4, {
+          x: "-3700",
+          ease: Expo.easeInOut,
+          delay: 2.5,
+          stagger: 0.05,
+        });
+
+        gsap.to(".text-container", 2, {
+          bottom: "-100%",
+          ease: Expo.easeInOut,
+          delay: 5,
+        });
+      });
+
+      $('.btn').click(function(){
+          setTimeout(function () {
+          window.location.replace('main.html');
+        }, 4850)
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404</title>
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <style>
+  /* body { width: 100vw; height: 100vh} */
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="text404">
+    <p>кажется что-то пошло не так</p>
+  </div>
+  <div class="Text404">
+    <p>но если <span class = "bold"> вернуть курицу на место,</span> <br>то вы обязательно попадете на сайт</p>
+  </div>
+  <div class="draggable" class="ui-widget-content">
+    <img class="image404" src="./images/ChickenRed.png">
+  </div>
+
+  <div class="droppable" class="ui-widget-header">
+      <img class="img404" src="./images/drop.png">
+  </div>
+   <div class="cursor"> </div>
+<!-- <script src="menu.js"> </script> -->
+<script>
+let cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+})
+
+$('.draggable').hover(function (){
+  $('.cursor').css({
+    'backgroundImage': 'url(images/help.svg)',
+    'transform': 'scale(2.5) translate(31%, 31%)',
+  })
+})
+
+$('.bg').hover(function (){
+  $('.cursor').css({
+    'backgroundImage': 'url(images/cursorBlack.svg)',
+    'transform': 'scale(1) translate(31%, 31%)',
+  })
+})
+
+$( function() {
+  $(".draggable").draggable();
+  $(".droppable").droppable({
+    drop: function(event, ui) {
+      $(this)
+        .addClass("ui-state-highlight")
+        window.location.replace('main.html');
+    }
+  });
+});
+</script>
+</body>
+</html>

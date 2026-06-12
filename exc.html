@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зона идей</title>
+  <link rel="stylesheet" type="text/css" href="3d.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+
+  <div class="menuPoints">
+    <h1>зона идей</h1>
+    <div class="points">
+      <a href="lounge.html"><div class ="point"></div></a>
+      <div class ="pointRed"> </div>
+      <a href="art.html"><div class ="point"></div></a>
+      <a href="exh.html"><div class ="point"></div></a>
+    </div>
+  </div>
+
+  <div class="menu-tog">
+       <p>Меню</p>
+   </div>
+   <div class="menu">
+     <div class="black"> </div>
+       <div class="links">
+         <div class="redMenu">
+           <li class="menu-wrap" id="exc"><a href="lounge.html"></a></li>
+         </div>
+         <div class="orgMenu">
+           <li class="menu-wrap" id="wrk"><a href="gallery.html"></a></li>
+         </div>
+          <div class="blueMenu">
+           <li class="menu-wrap" id="evn"><a href="events.html"></a></li>
+         </div>
+          <div class="yelMenu">
+           <li class="menu-wrap" id="shp"><a href="shop.html"></a></li>
+          </div>
+       </div>
+   </div>
+  <div class="mainMenu">
+    <a href ="main.html"><div class="prev"></div></a>
+   </div>
+  <div id="background-container" class="background-container">
+    <div id="video-container" class="video-container">
+      <video src="secondzone.mov" type="video/mp4" id="bgVideo"></video>
+    </div>
+  </div>
+  <div id="scroll-container" class="scroll-container">
+    <section class="step"></section>
+  </div>
+    <section class="bc">
+      <div class = "text">
+        <h2>Придумать новую идею будущего Проекта может быть серьезной проблемой для любой творческой личности</h2>
+        <h2>от рисования на стенах до записей в альбомах — курицы используют всевозможные способы зафиксировать мысли</h2>
+        <h2>благодаря этой зоне получается найти уникальные <br> и вдохновляющие идеи</h2>
+      </div>
+      <div class = "images">
+        <div class="img9"></div>
+        <div class="img10"></div>
+        <div class="img11"></div>
+        <div class="img12"></div>
+        <div class="img13"></div>
+        <div class="img14"></div>
+        <div class="img15"></div>
+        <div class="img16"></div>
+      </div>
+    </section>
+
+  <!-- Gsap ScrollTrigger-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="3d.js" charset="utf-8"></script>
+  <div class="cursor"> </div>
+  <script src="menu.js"></script>
+</body>
+</html>

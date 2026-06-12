@@ -1,0 +1,14 @@
+@import 'reset.css';
+@import 'responsive.css';
+
+@font-face {
+    font-family: KKL;
+    src: url(fonts/Kkl.otf); }
+
+@font-face {
+    font-family: NeutralFace;
+    src: url(fonts/NeutralFace.otf); }
+
+@font-face {
+    font-family: NeutralFace-Bold;
+    src: url(fonts/NeutralFace-Bold.otf); }

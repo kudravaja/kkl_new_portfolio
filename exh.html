@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Креатив выставка</title>
+  <link rel="stylesheet" type="text/css" href="3d.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+
+  <div class="menuPoints">
+    <h1>креатив выставка</h1>
+    <div class="points">
+      <a href="lounge.html"><div class ="point"></div></a>
+      <a href="exc.html"><div class ="point"></div></a>
+      <a href="art.html"><div class ="point"></div></a>
+      <div class ="pointRed"> </div>
+    </div>
+  </div>
+
+  <div class="menu-tog">
+       <p>Меню</p>
+   </div>
+   <div class="menu">
+     <div class="black"> </div>
+       <div class="links">
+         <div class="redMenu">
+           <li class="menu-wrap" id="exc"><a href="lounge.html"></a></li>
+         </div>
+         <div class="orgMenu">
+           <li class="menu-wrap" id="wrk"><a href="gallery.html"></a></li>
+         </div>
+          <div class="blueMenu">
+           <li class="menu-wrap" id="evn"><a href="events.html"></a></li>
+         </div>
+          <div class="yelMenu">
+           <li class="menu-wrap" id="shp"><a href="shop.html"></a></li>
+          </div>
+       </div>
+   </div>
+  <div class="mainMenu">
+    <a href ="main.html"><div class="prev"></div></a>
+   </div>
+  <div id="background-container" class="background-container">
+    <div id="video-container" class="video-container">
+      <video src="fourthzone.mov" type="video/mp4" id="bgVideo"></video>
+    </div>
+  </div>
+  <div id="scroll-container" class="scroll-container">
+    <section class="step"></section>
+  </div>
+    <section class="bc">
+      <div class = "text">
+        <h2>выставка обновляется каждую неделю и на данный момент <br> у нас уже есть большой сПисок Постоянных клиентов</h2>
+        <h2>на выставке вы всегда найдете что-то интересное для себя, что Поможет вам вдохновится или узнать что- то новое</h2>
+        <h2>мы всегда рады новым гостям, ждём вас в гости</h2>
+      </div>
+      <div class = "images">
+        <div class="img25"></div>
+        <div class="img26"></div>
+        <div class="img27"></div>
+        <div class="img28"></div>
+        <div class="img29"></div>
+        <div class="img30"></div>
+        <div class="img31"></div>
+        <div class="img32"></div>
+      </div>
+    </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="3d.js" charset="utf-8"></script>
+  <div class="cursor"> </div>
+  <script src="menu.js"></script>
+</body>
+</html>
